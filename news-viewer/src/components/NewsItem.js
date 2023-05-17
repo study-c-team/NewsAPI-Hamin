@@ -25,12 +25,12 @@ const NewsItemBlock = styled.div`
                 white-space: normal;
             }
         }
-        & + &{ //이게 뭘 의미하는 거지?
+        & + &{ 
             margin-top: 3rem;
         }
 `;
 
-const newsItem = ({article}) => {
+const NewsItem = ({article}) => {
     const {title, description, url, urlToImage} = article
     return(
         <NewsItemBlock>
@@ -53,4 +53,4 @@ const newsItem = ({article}) => {
     );
 };
 
-export default newsItem;
+export default NewsItem;
